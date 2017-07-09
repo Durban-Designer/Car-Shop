@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.css" type="text/css" />
+    <link rel="stylesheet/less" type="text/css" href="css/style.less">
+    <script src="css/less.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+    <title>Birnbaum Motors Showroom</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo"><a href="index.html"><img src="images/logo.png" height="80px"/></a></div>
+      <div class="navbutton"  onClick="navToggle()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+          <rect y="57" width="80" height="12"/>
+          <rect y="34" width="80" height="12"/>
+          <rect y="11" width="80" height="12"/>
+        </svg>
+      </div>
+
+      <div class="navpane hidden">
+        <center>
+        <div class="navtile"><a href="index.html">Home</a></div>
+        <div class="navtile"><a href="showroom.html">Showroom</a></div>
+        <div class="navtile"><a href="about.html">About</a></div>
+        <div class="navtile"><a href="contact.html">Contact</a></div>
+        </center>
+      </div>
+    </div>
+
+    <div class="showroom">
+      <center>
+        <div class="carousel visible"><img id="car" src="images/Sportster.png"width="100%" /></div>
+        <div class="carousel"><img id="car" src="images/Speedy.png"width="100%" /></div>
+        <div class="carousel"><img id="car" src="images/Titan.png"width="100%" /></div>
+        <div class="carousel"><img id="car" src="images/Texas.png"width="100%" /></div>
+        <div class="carousel"><img id="car" src="images/Econo.png"width="100%" /></div>
+        <input type="text" class="searchbox" onkeyup="search()" placeholder="Search Showroom">
+        <div class="car1">
+          <h2>Sportster</h2>
+          <img class="car-i" src="images/Sportster.png"/>
+          <p>Description: You'll be the coolest middle aged white guy on the
+            block with the new 2017 Sportster!!</p>
+          <h5>Price: $32,000 Tax: $2,560</h5>
+        </div>
+        <div class="car2">
+          <h2>Speedy</h2>
+          <img class="car-i" src="images/Speedy.png"/>
+          <p>Description: With Twin Turbos and pre-boost the Speedy will do just
+            as it's name implies and skirt you to freedom!</p>
+          <h5>Price:$25,000 Tax: $2,000</h5>
+        </div>
+        <div class="car3">
+          <h2>Titan</h2>
+          <img class="car-i" src="images/Titan.png"/>
+          <p>Description: A truck that can actually deliver on its promise,
+            overwhelming torque in a nicely sized package.</p>
+          <h5>Price: $22,000 Tax: $1,760</h5>
+        </div>
+        <div class="car4">
+          <h2>Super-Titan-XXL-Texas-Edition</h2>
+          <img class="car-i" src="images/Texas.png"/>
+          <p>Description: Do you love America? Are you tired of having to make two
+             trips to haul all your Fireworks and guns? Then the Super-Titan-XXL-Texas-Edition is the truck for you!</p>
+          <h5>Price:$40,000 Tax: $3,200</h5>
+        </div>
+        <div class="car5">
+          <h2>Econo-Cruise</h2>
+          <img class="car-i" src="images/Econo.png"/>
+          <p>Description: Smooth ride, afordable pricepoint, luxury feel, Econo-cruise.</p>
+          <h5>Price: $10,500 Tax: $840</h5>
+        </div>
+        <div class="none hidden">I'm sorry but your search returned no results...</div>
+      </center>
+    </div>
+
+    <script src="css/nav.js"></script>
+    <script src="css/search.js"></script>
+    <carousel.js></script>
+  </body>
+</html>
